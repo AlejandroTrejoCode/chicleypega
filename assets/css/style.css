@@ -1,0 +1,60 @@
+/* --- RESET --- */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#header {
+    position: fixed;
+    display: block;
+    top: 0;
+    transition: 0.5s background-color;
+}
+
+.coloredNav {
+    background-color: #ff204c;
+}
+3
+.logo {
+    height: 70px;
+}
+
+.nav-item {
+    font-weight: 700;
+}
+
+.navbar-toggle {
+    background: blue;
+}
+
+.navbar-toggler-icon {
+    color: blue;
+}
+
+#fullpage {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ff204c;
+    background-blend-mode: multiply;
+}
+
+.legend h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 1px 1px #000;
+}
+
+.legend h2 {
+    text-shadow: 1px 1px #000;
+}
+
+
+.normal {
+    height: 1200px;
+}
