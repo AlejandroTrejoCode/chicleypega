@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <link rel="stylesheet" href="assets/css/animate.css">
 </head>
 <body>
     
@@ -71,7 +71,17 @@
     </div>
     
     <div class="normal">
+        <div class="section" >
+            <div class="photo-container">
+                <div class="overlay-pink"></div>
+                <img src="assets/img/foto1.jpg" class="photo">
         
+                <div class="overlay-container" id='yael' onmouseover="$('#yael').addClass('animated fadeIn'); $('#yael').removeClass('fadeOut');" onmouseleave="$('#yael').addClass('animated fadeOut');">
+                    <div class="overlay-yellow"></div>
+                    <img class="photo" src="assets/img/foto2.jpg">
+                </div>
+            </div>
+        </div>
     </div>
      
     <script src="assets/js/jquery-3.2.1.min.js"></script>
