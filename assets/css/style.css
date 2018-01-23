@@ -7,19 +7,34 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@font-face {
+    font-family: "California";
+    src: url("../font/California.ttf");
+}
+
+.btn-pink {
+    background-color: #ff204c;
+    border: none;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+
+.btn-pink:hover {
+    background-color: #ffda00;
+}
 
 #header {
     position: fixed;
     display: block;
     top: 0;
     transition: 0.5s background-color;
-    z-index: 99;
+    z-index: 1;
 }
 
 .coloredNav {
     background-color: #ff204c;
 }
-3
+
 .logo {
     height: 70px;
 }
@@ -41,6 +56,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-color: #ff204c;
     background-blend-mode: multiply;
 }
@@ -49,12 +65,48 @@
     font-size: 3em;
     font-weight: 700;
     text-shadow: 1px 1px #000;
+    margin-top: 10 0 0 0;
 }
 
-.legend h2 {
+.legend h5 {
     text-shadow: 1px 1px #000;
 }
 
+.about-us {
+    background-image: url(../img/background-about.png);
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 30px 0;
+}
+
+.image {
+    text-align: center;
+}
+
+.logotipo {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-us .right h2 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: "California";
+    color: #E41B48;
+}
+
+.about-us .right h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.about-us .right .bold {
+    font-weight: 700;
+}
 
 .normal {
     height: 1200px;
@@ -94,4 +146,40 @@
     height: 100%;
     top: 0;
     opacity: 0;
+}
+
+@media (max-width: 768px) { 
+
+}
+
+
+@media (max-width: 576px) { 
+    
+    .legend h1{
+        font-size: 2em;
+    }
+    
+    .legend h5 {
+        font-size: 0.9em;
+    }
+    
+    .logotipo {
+        max-width: 80%;
+        margin: 30px 0;
+    }
+    
+    .about-us .right h2 {
+        font-size: 3em;
+        text-align: justify;
+    }
+    
+    .about-us .right h3 {
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    .about-us .right p {
+        text-align: justify;
+        font-size: 0.9em;
+    }
 }
