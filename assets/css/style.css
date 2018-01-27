@@ -108,13 +108,15 @@
     font-weight: 700;
 }
 
-.normal {
-    height: 1200px;
+
+.team {
+    min-height: 700px;
+    background: black;
 }
 
 .photo-container{
     display: inline-block;
-    width: 30%;
+    height: 500px;
     position: relative;
 }
 

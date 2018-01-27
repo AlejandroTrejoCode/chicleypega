@@ -13,4 +13,13 @@ $(document).ready(function() {
         }
     });
     
+    $(".overlay-container").on("mouseenter", function(){
+        this.addClass("animated fadeIn");
+        this.removeClass('fadeOut');
+    });
+    $(".overlay-container").on("mouseleave", function(){
+        this.addClass("animated fadeOut");
+        this.removeClass('fadeIn');
+    });
+    
 });
