@@ -23,7 +23,15 @@
     <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    
+    <script type="text/javascript">
+        function overlayEfectIn(id){
+            console.log(id)
+            $('#' + id).addClass('animated fadeIn'); $('#' + id).removeClass('fadeOut'); 
+        }
+        function overlayEfectOut(id){
+            $('#'+id).addClass('animated fadeOut');
+        }
+    </script>
 </head>
 <body>
     
@@ -99,7 +107,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='yael' onmouseover="$('#yael').addClass('animated fadeIn'); $('#yael').removeClass('fadeOut');" onmouseleave="$('#yael').addClass('animated fadeOut');">
+                            <div class="overlay-container" id='foto1' onmouseover="overlayEfectIn('foto1');" onmouseleave="overlayEfectOut('foto1');">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -110,7 +118,18 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container">
+                            <div class="overlay-container" id='foto2' onmouseover="overlayEfectIn('foto2');" onmouseleave="overlayEfectOut('foto2');">
+                                <div class="overlay-yellow"></div>
+                                <img class="photo" src="assets/img/foto2.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="photo-container" >
+                        <div class="overlay-pink"></div>
+                            <img src="assets/img/foto1.jpg" class="photo">        
+                            <div class="overlay-container" id='foto3' onmouseover="overlayEfectIn('foto3');" onmouseleave="overlayEfectOut('foto3');">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -121,18 +140,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container">
-                                <div class="overlay-yellow"></div>
-                                <img class="photo" src="assets/img/foto2.jpg">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="photo-container">
-                        <div class="overlay-pink"></div>
-                            <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container">
+                            <div class="overlay-container" id='foto4' onmouseover="overlayEfectIn('foto4');" onmouseleave="overlayEfectOut('foto4');">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
