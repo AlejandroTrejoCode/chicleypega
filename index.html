@@ -19,19 +19,10 @@
     <meta name="robots" content="index"/>
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <script type="text/javascript">
-        function overlayEfectIn(id){
-            console.log(id)
-            $('#' + id).addClass('animated fadeIn'); $('#' + id).removeClass('fadeOut'); 
-        }
-        function overlayEfectOut(id){
-            $('#'+id).addClass('animated fadeOut');
-        }
-    </script>
 </head>
 <body>
     
@@ -44,7 +35,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a href="/" class="navbar-brand">
-                            <img class="logo" src="assets/img/Logo.png" alt="">
+                            <img class="logo wow fadeInDown" src="assets/img/Logo.png" alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
                             <span class="navbar-toggler-icon"></span>
@@ -52,16 +43,16 @@
                         <div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">NOSOTROS</a>
+                                    <a class="nav-link wow fadeInDown" data-wow-delay="0.2s" href="#">NOSOTROS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">SERVICIOS</a>
+                                    <a class="nav-link wow fadeInDown" data-wow-delay="0.4s" href="#">SERVICIOS</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">PORTAFOLIO</a>
+                                    <a class="nav-link wow fadeInDown" data-wow-delay="0.6s" href="#">PORTAFOLIO</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">CONTACTO</a>
+                                    <a class="nav-link wow fadeInDown" data-wow-delay="0.8s" href="#">CONTACTO</a>
                                 </li>
                             </ul>
                         </div>
@@ -71,8 +62,15 @@
             
             <div class="legend text-white text-right">
                 <div class="container">
-                    <h1 class="animated fadeInRight">WE CREATE SOLUTIONS <br> FOR BUSINESSES</h1>
-                    <h5 class="animated fadeInRight">A clean and modern WordPress theme built on the rock-solid Genesis <br> frameworkdesigned for creative agencies or any kind of local business</h5>
+                    <h1 class="wow fadeInRight" data-wow-delay="0.6s">
+                        <span>
+                            WE ARE A CREATIVE AGENCY
+                        </span>
+                    </h1>
+                    <h5 class="wow fadeInRight" data-wow-delay="1s">                        
+                        SOMOS UN EQUIPO CREATIVO NUESTRA META ES:
+                        <br>SORPRENDER A NUESTROS CLIENTES CON <br> IDEAS INNOVADORAS Y PEGAJOSAS
+                    </h5>
                 </div>
             </div>
 
@@ -84,16 +82,26 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 left">
                     <div class="container image">                       
-                        <img class="img-fluid logotipo animated fadeInUp" src="assets/img/ChicleyPegaLogo.png" alt="Logo Chicle y Pega">
+                        <img class="img-fluid logotipo wow fadeInLeft" data-wow-delay="0.2s" src="assets/img/ChicleyPegaLogo.png" alt="Logo Chicle y Pega">
                     </div>                    
                 </div>
                 <div class="col-md-6 col-sm-12 right">
                     <div class="container">
-                        <h2>Quienes somos</h2>
-                        <h3>Somos un equipo de mentes jóvenes 100% digitales Y CREATIVOS.</h3>
-                        <p>Transformamos el pensamiento en estrategias y amamos lo que hacemos. Nuestra mejor técnica es construir ideas en equipo y alimentarlas a través de distintas disciplinas.</p>
-                        <p class="bold">Estamos convencidos de que el nuevo medio es el usuario.</p>
-                        <button type="button" class="btn btn-primary btn-pink">NUESTROS SERVICIOS</button>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">
+                            Quienes somos
+                        </h2>
+                        <h3 class="wow fadeInUp" data-wow-delay="0.3s">
+                            Somos un equipo de mentes jóvenes 100% digitales Y CREATIVOS.
+                        </h3>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">
+                            Transformamos el pensamiento en estrategias y amamos lo que hacemos. Nuestra mejor técnica es construir ideas en equipo y alimentarlas a través de distintas disciplinas.
+                        </p>
+                        <p class="bold wow fadeInUp" data-wow-delay="0.5s">
+                            Estamos convencidos de que el nuevo medio es el usuario.
+                        </p>
+                        <button type="button" data-wow-delay="0.6s" class="btn btn-primary btn-pink wow fadeInUp">
+                            NUESTROS SERVICIOS
+                        </button>
                     </div>
                 </div>
             </div>
@@ -103,7 +111,8 @@
     <div class="team">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-6">
+               
+                <div class="col-md-3 col-sm-6 team-photo">
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
@@ -114,7 +123,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 team-photo">
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
@@ -125,7 +134,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 team-photo">
                     <div class="photo-container" >
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
@@ -136,7 +145,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-3 col-sm-6">
+                <div class="col-md-3 col-sm-6 team-photo">
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
@@ -148,12 +157,140 @@
                 </div>
                 
             </div>
+            
+            <div class="row">
+               
+                <div class="col-md-3 col-sm-6 team-photo">
+                    <div class="photo-container">
+                        <div class="overlay-pink"></div>
+                            <img src="assets/img/foto1.jpg" class="photo">        
+                            <div class="overlay-container" id='foto5' onmouseover="overlayEfectIn('foto5');" onmouseleave="overlayEfectOut('foto5');">
+                                <div class="overlay-yellow"></div>
+                                <img class="photo" src="assets/img/foto2.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 team-photo">
+                    <div class="photo-container">
+                        <div class="overlay-pink"></div>
+                            <img src="assets/img/foto1.jpg" class="photo">        
+                            <div class="overlay-container" id='foto6' onmouseover="overlayEfectIn('foto6');" onmouseleave="overlayEfectOut('foto6');">
+                                <div class="overlay-yellow"></div>
+                                <img class="photo" src="assets/img/foto2.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 team-photo">
+                    <div class="photo-container" >
+                        <div class="overlay-pink"></div>
+                            <img src="assets/img/foto1.jpg" class="photo">        
+                            <div class="overlay-container" id='foto7' onmouseover="overlayEfectIn('foto7');" onmouseleave="overlayEfectOut('foto7');">
+                                <div class="overlay-yellow"></div>
+                                <img class="photo" src="assets/img/foto2.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6 team-photo">
+                    <div class="photo-container">
+                        <div class="overlay-pink"></div>
+                            <img src="assets/img/foto1.jpg" class="photo">        
+                            <div class="overlay-container" id='foto8' onmouseover="overlayEfectIn('foto8');" onmouseleave="overlayEfectOut('foto'8);">
+                                <div class="overlay-yellow"></div>
+                                <img class="photo" src="assets/img/foto2.jpg">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
     </div>
+    
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="title wow fadeInDown">
+                    <h2>
+                        Nuestros Servicios
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="services-item bottom-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s" id="service-marketing">
+                    <img src="assets/img/services1.png" alt="">
+                    <p class="services-name">
+                        MARKETING
+                    </p>
+                </div>
+                <div class="services-item left-bottom-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.35s" id="service-seo">
+                    <img src="assets/img/services2.png" alt="">
+                    <p class="services-name">
+                        SEO & SEM
+                    </p>
+                </div>
+                <div class="services-item left-bottom col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.5s" id="service-video">
+                    <img src="assets/img/services3.png" alt="">
+                    <p class="services-name">
+                        VIDEO
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="services-item top-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="assets/img/services4.png" alt="">
+                    <p class="services-name">
+                        DISEÑO GRÁFICO
+                    </p>
+                </div>
+                <div class="services-item left-top-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
+                    <img src="assets/img/services5.png" alt="">
+                    <p class="services-name">
+                        DISEÑO/DESARROLLO WEB
+                    </p>
+                </div>
+                <div class="services-item left-top col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="1s" onclick="openNav()">
+                    <img src="assets/img/services6.png" alt="">
+                    <p class="services-name">
+                        BRANDING
+                    </p>
+                </div>
+            </div>
+            <div class="spacer"></div>            
+        </div>
+    </div>
+    
      
+    <div id="services-overlay" class="overlay">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div class="overlay-content">
+            <div class="services-modal">       
+                <div class="container">
+                    <div class="row">
+                        <div class="image-service">
+                            <img src="assets/img/services1.png" alt="">
+                        </div>
+                        <div class="description-title">
+                            <h3>MARKETING</h3>
+                        </div>
+                        <div class="description-service">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, voluptatem, fugiat. Quam veniam minus facilis, hic maiores, cupiditate id! Cupiditate expedita numquam sit nostrum, odio libero culpa sunt enim quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque provident aliquam at quam tenetur quis, voluptates suscipit officia aspernatur vero quidem incidunt dicta explicabo. Obcaecati distinctio saepe odit ullam!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/jquery.fullpage.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

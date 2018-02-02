@@ -43,6 +43,10 @@
     font-weight: 700;
 }
 
+.nav-link {
+    color: white !important;
+}
+
 .navbar-toggle {
     background: blue;
 }
@@ -64,13 +68,18 @@
 .legend h1 {
     font-size: 3em;
     font-weight: 700;
-    text-shadow: 1px 1px #000;
-    margin-top: 10 0 0 0;
+    text-shadow: 2px 1px #ddd;
+}
+
+.legend h1 span {
+    padding: 10px;
 }
 
 .legend h5 {
-    text-shadow: 1px 1px #000;
+    text-shadow: 1px 1px #ddd;
+    font-weight: 600;
 }
+
 
 .about-us {
     background-image: url(../img/background-about.png);
@@ -116,12 +125,12 @@
 
 .photo-container{
     display: inline-block;
-    /*height: 500px;*/
     position: relative;
 }
 
 .photo{
     width: 100%;
+    height: 300px;
 }
 
 .overlay-pink{
@@ -150,8 +159,155 @@
     opacity: 0;
 }
 
+.team-photo {
+    margin: 10px 0;
+}
+
+.services .title {
+    width: 100%;
+    font-family: "California";
+}
+
+.services .title h2 {
+    text-align: center;
+    font-size: 3.5em;
+    font-family: "California";
+    color: #E41B48;
+    padding: 30px 0;
+}
+
+.services-item {
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s background-color, 0.5s color;
+    cursor: pointer;
+}
+
+.services-name {
+    font-weight: 700;
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+.bottom-right {
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.left-bottom-right {
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.left-bottom {
+    border-left: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.top-right {
+    border-top: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.left-top-right {
+    border-left: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.left-top {
+    border-left: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+}
+
+.spacer {
+    padding: 30px 0;
+}
+
+.services-item:hover {
+    background-color: #f0ce2b;
+    color: white;
+}
+
+/*
+.services-modal {
+    min-height: 700px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-modal .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description-title h3 {
+    color: white;
+    font-weight: 600;
+    padding: 20px 0 10px 0;
+}
+
+.description-service p{
+    width: 70%;
+    margin: auto;
+    color: white;
+    text-align: justify;
+    font-weight: 500;
+}
+
+*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.services-modal .container .row{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-modal .description-title {
+    margin: 20px 0;
+}
+
 @media (max-width: 768px) { 
 
+    .services-item {
+        border: 1px solid #dddddd;
+    }
+    
 }
 
 
@@ -184,4 +340,15 @@
         text-align: justify;
         font-size: 0.9em;
     }
+    
+    .team-photo {
+        background: blue;
+        text-align: center;
+    }
+    .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }

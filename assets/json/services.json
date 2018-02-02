@@ -1,0 +1,17 @@
+{
+    "marketing": [
+        {
+            "image" : "marketing.jpg",
+            "title" : "MARKETING",
+            "description": "lorem ipsum dolor sit"
+        }
+    ],
+    
+    "design" : [
+        {
+            "image" : "diseno.jpg",
+            "title" : "DISEÑO",
+            "description" : "Lorem diseings asd"
+        }
+    ]
+}
