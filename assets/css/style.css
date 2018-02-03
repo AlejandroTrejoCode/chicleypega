@@ -163,12 +163,12 @@
     margin: 10px 0;
 }
 
-.services .title {
+.services .title, .portfolio .title {
     width: 100%;
     font-family: "California";
 }
 
-.services .title h2 {
+.services .title h2, .portfolio .title h2 {
     text-align: center;
     font-size: 3.5em;
     font-family: "California";
@@ -230,39 +230,6 @@
     color: white;
 }
 
-/*
-.services-modal {
-    min-height: 700px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.services-modal .container .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.description-title h3 {
-    color: white;
-    font-weight: 600;
-    padding: 20px 0 10px 0;
-}
-
-.description-service p{
-    width: 70%;
-    margin: auto;
-    color: white;
-    text-align: justify;
-    font-weight: 500;
-}
-
-*/
 .overlay {
     height: 100%;
     width: 0;
@@ -302,23 +269,33 @@
     margin: 20px 0;
 }
 
-.portfolio-images1 {
+.portfolio-images1, .portfolio-images2 {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
-    background: red;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-images2 {
+    margin-bottom: 20px;
 }
 
 .portfolio-image {
-    width: 33%;
+    width: 33.3%;
     height: auto;
     display: inline-block;
-    background: green;
 }
 
 .portfolio-image img {
     width: 100%;
+}
+
+.more {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) { 
@@ -326,7 +303,6 @@
     .services-item {
         border: 1px solid #dddddd;
     }
-    
 }
 
 
@@ -361,13 +337,32 @@
     }
     
     .team-photo {
-        background: blue;
         text-align: center;
     }
-    .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+    
+    .overlay a {
+        font-size: 20px
+    }
+    
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+    .portfolio .container .row {
+        width: 100%;
+    }
+    
+    .portfolio-images1, .portfolio-images2 {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .portfolio-image {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        margin: 5%;
+    }
 }
