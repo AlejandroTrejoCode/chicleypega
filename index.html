@@ -116,7 +116,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto1' onmouseover="overlayEfectIn('foto1');" onmouseleave="overlayEfectOut('foto1');">
+                            <div class="overlay-container" id='foto1' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -127,7 +127,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto2' onmouseover="overlayEfectIn('foto2');" onmouseleave="overlayEfectOut('foto2');">
+                            <div class="overlay-container" id='foto2' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -138,7 +138,7 @@
                     <div class="photo-container" >
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto3' onmouseover="overlayEfectIn('foto3');" onmouseleave="overlayEfectOut('foto3');">
+                            <div class="overlay-container" id='foto3' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -149,7 +149,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto4' onmouseover="overlayEfectIn('foto4');" onmouseleave="overlayEfectOut('foto4');">
+                            <div class="overlay-container" id='foto4' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -164,7 +164,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto5' onmouseover="overlayEfectIn('foto5');" onmouseleave="overlayEfectOut('foto5');">
+                            <div class="overlay-container" id='foto5' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -175,7 +175,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto6' onmouseover="overlayEfectIn('foto6');" onmouseleave="overlayEfectOut('foto6');">
+                            <div class="overlay-container" id='foto6' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -186,7 +186,7 @@
                     <div class="photo-container" >
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto7' onmouseover="overlayEfectIn('foto7');" onmouseleave="overlayEfectOut('foto7');">
+                            <div class="overlay-container" id='foto7' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -197,7 +197,7 @@
                     <div class="photo-container">
                         <div class="overlay-pink"></div>
                             <img src="assets/img/foto1.jpg" class="photo">        
-                            <div class="overlay-container" id='foto8' onmouseover="overlayEfectIn('foto8');" onmouseleave="overlayEfectOut('foto'8);">
+                            <div class="overlay-container" id='foto8' onmouseover="overlayEfectIn(this.id);" onmouseleave="overlayEfectOut(this.id);">
                                 <div class="overlay-yellow"></div>
                                 <img class="photo" src="assets/img/foto2.jpg">
                         </div>
@@ -219,19 +219,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="services-item bottom-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s" id="service-marketing">
+                <div class="services-item bottom-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.2s" id="marketing" onclick="getService(this.id);">
                     <img src="assets/img/services1.png" alt="">
                     <p class="services-name">
                         MARKETING
                     </p>
                 </div>
-                <div class="services-item left-bottom-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.35s" id="service-seo">
+                <div class="services-item left-bottom-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.35s" id="seo-sem" onclick="getService(this.id);">
                     <img src="assets/img/services2.png" alt="">
                     <p class="services-name">
                         SEO & SEM
                     </p>
                 </div>
-                <div class="services-item left-bottom col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.5s" id="service-video">
+                <div class="services-item left-bottom col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.5s" id="video" onclick="getService(this.id);">
                     <img src="assets/img/services3.png" alt="">
                     <p class="services-name">
                         VIDEO
@@ -240,19 +240,19 @@
             </div>
             
             <div class="row">
-                <div class="services-item top-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="services-item top-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.6s" id="graphic-design" onclick="getService(this.id);">
                     <img src="assets/img/services4.png" alt="">
                     <p class="services-name">
                         DISEÑO GRÁFICO
                     </p>
                 </div>
-                <div class="services-item left-top-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="services-item left-top-right col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="0.8s" id="web" onclick="getService(this.id);">
                     <img src="assets/img/services5.png" alt="">
                     <p class="services-name">
                         DISEÑO/DESARROLLO WEB
                     </p>
                 </div>
-                <div class="services-item left-top col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="1s" onclick="openNav()">
+                <div class="services-item left-top col-md-4 col-sm-12 wow fadeInUp" data-wow-delay="1s"  id="branding" onclick="getService(this.id);">
                     <img src="assets/img/services6.png" alt="">
                     <p class="services-name">
                         BRANDING
@@ -271,13 +271,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="image-service">
-                            <img src="assets/img/services1.png" alt="">
+                            <img id="service-img" alt="">
                         </div>
                         <div class="description-title">
-                            <h3>MARKETING</h3>
+                            <h3 id = "service-title"></h3>
                         </div>
                         <div class="description-service">
-                            <p>
+                            <p id="service-description">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, voluptatem, fugiat. Quam veniam minus facilis, hic maiores, cupiditate id! Cupiditate expedita numquam sit nostrum, odio libero culpa sunt enim quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque provident aliquam at quam tenetur quis, voluptates suscipit officia aspernatur vero quidem incidunt dicta explicabo. Obcaecati distinctio saepe odit ullam!
                             </p>
                         </div>

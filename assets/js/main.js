@@ -1,4 +1,5 @@
 // fullpage.js 
+var services;
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		autoScrolling: false,
@@ -26,12 +27,11 @@ $(document).ready(function() {
     $('.closebtn').on('click', function(){
         $('#services-overlay').css('width','0%');
     });
-    
-    $.getJSON('result.json', function(data){
-        console.log(data.name);
+     $.getJSON('./assets/json/services.json', function(data){
+        services = data
     });
+
     
-    console.log("Ready");
 });
 
 function overlayEfectIn(id){
@@ -40,4 +40,14 @@ function overlayEfectIn(id){
 }
     function overlayEfectOut(id){
     $('#'+id).addClass('animated fadeOut');
+}
+
+function getService(id){
+    console.log(id);
+    var title = services[id].title
+    var description = services[id].description
+    var image = services[id].image
+    $("#service-title").text(title);
+    $("#service-description").text(description);
+    document.getElementById("service-img").src = "assets/img/" + image;
 }

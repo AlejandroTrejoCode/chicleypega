@@ -1,17 +1,39 @@
 {
-    "marketing": [
+    "marketing": 
         {
-            "image" : "marketing.jpg",
+            "image" : "services1.png",
             "title" : "MARKETING",
             "description": "lorem ipsum dolor sit"
         }
-    ],
-    
-    "design" : [
+    ,
+    "seo-sem" : 
         {
-            "image" : "diseno.jpg",
-            "title" : "DISEÑO",
-            "description" : "Lorem diseings asd"
+            "image" : "services2.png",
+            "title" : "SEO & SEM",
+            "description" : "Lorem seo asd"
+        },
+    "video" : 
+        {
+            "image" : "services3.png",
+            "title" : "VIDEO",
+            "description" : "Lorem video asd"
+        },
+    "graphic-design" : 
+        {
+            "image" : "services4.png",
+            "title" : "DISEÑO GRAFICO",
+            "description" : "Lorem diseño asd"
+        },
+    "web" : 
+        {
+            "image" : "services5.png",
+            "title" : "DISEÑO/DESARROLLO WEB",
+            "description" : "Lorem web asd"
+        },
+    "branding" : 
+        {
+            "image" : "services6.png",
+            "title" : "BRANDING",
+            "description" : "Lorem branding asd"
         }
-    ]
 }
