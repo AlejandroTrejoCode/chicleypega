@@ -313,14 +313,12 @@
 .portfolio-image {
     width: 33%;
     height: auto;
-    display: flex;
+    display: inline-block;
     background: green;
 }
 
 .portfolio-image img {
-    
-    max-height: 350px;
-    height: auto;
+    width: 100%;
 }
 
 @media (max-width: 768px) { 
