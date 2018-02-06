@@ -22,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4I9Q7rgClM73rosRdSO0dSu3pFtUivJA&callback=myMap"></script>
 </head>
@@ -275,11 +276,13 @@
                             <img id="service-img" alt="">
                         </div>
                         <div class="description-title">
-                            <h3 id = "service-title"></h3>
+                            <h3 id="service-title">
+                                <!-- Load JSON -->
+                            </h3>
                         </div>
                         <div class="description-service">
                             <p id="service-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, voluptatem, fugiat. Quam veniam minus facilis, hic maiores, cupiditate id! Cupiditate expedita numquam sit nostrum, odio libero culpa sunt enim quos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eaque provident aliquam at quam tenetur quis, voluptates suscipit officia aspernatur vero quidem incidunt dicta explicabo. Obcaecati distinctio saepe odit ullam!
+                                <!-- Load JSON -->
                             </p>
                         </div>
                     </div>
@@ -321,69 +324,70 @@
             <div class="more">
                 <button type="button" class="btn btn-primary btn-pink">
                     VER TODOS LOS PROYECTOS
+                </button>
             </div>
         </div>
     </div>
     
     <div class="contacto">
-        <div class="formulario-container">
-            <div class="titulos">
-                <h2>HOLA, HABLEMOS...</h2>
-                <h3>Mercado Ki-Huic Local 53 Av. Tulum Smz 5 Cancún, Q.Roo C.P 77511</h3>
-                <div>
-                    <div class="icono">
-                        <img src="assets/img/phone.png">
-                    </div>
-                    <div class="telefono">
-                        <h3>
-                            998346066
-                            <br>
-                            998346066
-                        </h3>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="left col-sm-12 col-md-6">
+                    <div class="container">
+                        <div class="title">
+                            <h2>
+                                HOLA , HABLEMOS...
+                            </h2>
+                        </div>
+                        <div class="address">
+                            <address>
+                                Mercado Ki-Huic Local 53 Av. Tulum Smz 5 <br> Cancún, Q.Roo C.P 77511
+                            </address>
+                        </div>
+                        <div class="phone">
+                            <div class="icon">
+                                <img src="assets/img/phone.png">
+                            </div>
+                            <div class="content">
+                                <a href="tel:998346066">998346066</a>
+                                <a href="tel:998346066">998346066</a>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="icon">
+                                <img src="assets/img/Mail.png">
+                            </div>
+                            <div class="content">
+                                <a href="mailto:hola@chicleypegacreativo.com">hola@chicleypegacreativo.com</a>
+                            </div>
+                        </div>
+
+                        <form>
+
+                            <input type="text" name="" placeholder="NOMBRE">
+                            <input type="email" name="" placeholder="CORREO">
+                            <textarea name="" placeholder="PLATÍCANOS TU PROYECTO"></textarea>
+
+                            <label id="services-selected">
+                                Marketing + SEM + Branding
+                            </label>
+
+                            <div class="form-buttons">                            
+                                <button id="select-services-button" class="btn-pink" type="button">
+                                    SERVICIOS
+                                </button>
+                                <button class="btn-pink">
+                                    ENVIAR
+                                </button>  
+                            </div>
+                        </form>
+                    </div>                    
                 </div>
-                <div>
-                    <div class="icono">
-                        <img src="assets/img/mail.png">
-                    </div>
-                    <div class="mail">
-                        <h3>
-                            hola@chicleypegacreativo.com
-                        </h3>
-                    </div>
+                <div class="right col-sm-12 col-md-6">
+                    <div id="map"></div>
                 </div>
             </div>
-            <form>
-                <div class="formulario">
-                    
-                    <input type="text" name="" placeholder="NOMBRE">
-                    <input type="text" name="" placeholder="CORREO">
-                    <textarea placeholder="PLATÍCANOS TU PROYECTO">
-                            
-                    </textarea>
-                </div>
-                <div>
-                    <div class="services-list">
-                        <label id="services-selected"></label>
-                    </div>
-                    <div class="form-buttons">
-                        <div>
-                            <button id="select-services-button" class=" btn-primary btn-pink" type="button">
-                                Selecciona servicios
-                            </button> 
-                        </div><!--
-                        --><div>
-                            <button class="btn btn-primary btn-pink">
-                                ENVIAR
-                            </button>  
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </form>
         </div>
-        <div id="map"> </div>
     </div>
 
     <div id="select-services" class="overlay">
@@ -394,7 +398,7 @@
                     <div class="row">
                 <div class="title wow fadeInDown">
                     <h2>
-                        Haz click en un servicio para agregarlo, haz click en un servicio seleccionado para removerlo
+                        SELECCIONA TUS SERVICIOS
                     </h2>
                 </div>
             </div>
@@ -444,6 +448,12 @@
             </div>
         </div>
     </div>
+    
+    <footer>
+        <p>Chicle y Pega  - 2018</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+    </footer>
 
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/jquery.fullpage.min.js"></script>
