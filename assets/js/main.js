@@ -1,5 +1,6 @@
 // fullpage.js 
 var services;
+var selectedServices = [];
 $(document).ready(function() {
 	$('#fullpage').fullpage({
 		autoScrolling: false,
@@ -24,16 +25,30 @@ $(document).ready(function() {
         $('#services-overlay').css('width','100%');
     });
     
+    $('#select-services-button').on('click', function(){
+        $('#select-services').css('width','100%');
+    });
+
     $('.closebtn').on('click', function(){
         $('#services-overlay').css('width','0%');
+    });
+    $('#closebtn-services').on('click', function(){
+        $('#select-services').css('width','0%');
     });
      $.getJSON('./assets/json/services.json', function(data){
         services = data
     });
 
-    
+    Map();
 });
-
+function Map() {
+    var mapCanvas = document.getElementById("map");
+    var mapOptions = {
+        center: new google.maps.LatLng(51.5, -0.2),
+        zoom: 10
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+}
 function overlayEfectIn(id){
     console.log(id)
     $('#' + id).addClass('animated fadeIn'); $('#' + id).removeClass('fadeOut'); 
@@ -50,4 +65,18 @@ function getService(id){
     $("#service-title").text(title);
     $("#service-description").text(description);
     document.getElementById("service-img").src = "assets/img/" + image;
+}
+
+function pushService(id){
+    var auxId = id.replace("-list", "");
+    console.log(auxId)
+    if(!selectedServices.includes(auxId)){
+        selectedServices.push(auxId);
+        $('#' + id).css('background','#f0ce2b');
+    }
+    else{
+        $('#' + id).css('background','transparent');
+        selectedServices = selectedServices.filter(item => item !== auxId)
+    }
+    $("#services-selected").text(selectedServices.join(" + "));
 }

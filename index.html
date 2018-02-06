@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4I9Q7rgClM73rosRdSO0dSu3pFtUivJA&callback=myMap"></script>
 </head>
 <body>
     
@@ -320,11 +321,130 @@
             <div class="more">
                 <button type="button" class="btn btn-primary btn-pink">
                     VER TODOS LOS PROYECTOS
-                </button>
             </div>
         </div>
     </div>
-      
+    
+    <div class="contacto">
+        <div class="formulario-container">
+            <div class="titulos">
+                <h2>HOLA, HABLEMOS...</h2>
+                <h3>Mercado Ki-Huic Local 53 Av. Tulum Smz 5 Cancún, Q.Roo C.P 77511</h3>
+                <div>
+                    <div class="icono">
+                        <img src="assets/img/phone.png">
+                    </div>
+                    <div class="telefono">
+                        <h3>
+                            998346066
+                            <br>
+                            998346066
+                        </h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="icono">
+                        <img src="assets/img/mail.png">
+                    </div>
+                    <div class="mail">
+                        <h3>
+                            hola@chicleypegacreativo.com
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="formulario">
+                    
+                    <input type="text" name="" placeholder="NOMBRE">
+                    <input type="text" name="" placeholder="CORREO">
+                    <textarea placeholder="PLATÍCANOS TU PROYECTO">
+                            
+                    </textarea>
+                </div>
+                <div>
+                    <div class="services-list">
+                        <label id="services-selected"></label>
+                    </div>
+                    <div class="form-buttons">
+                        <div>
+                            <button id="select-services-button" class=" btn-primary btn-pink" type="button">
+                                Selecciona servicios
+                            </button> 
+                        </div><!--
+                        --><div>
+                            <button class="btn btn-primary btn-pink">
+                                ENVIAR
+                            </button>  
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </form>
+        </div>
+        <div id="map"> </div>
+    </div>
+
+    <div id="select-services" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" id="closebtn-services">&times;</a>
+        <div class="overlay-content">
+            <div class="services-modal">       
+                <div class="container">
+                    <div class="row">
+                <div class="title wow fadeInDown">
+                    <h2>
+                        Haz click en un servicio para agregarlo, haz click en un servicio seleccionado para removerlo
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="services-item-list bottom-right col-md-4 col-sm-12" data-wow-delay="0.2s" id="marketing-list" onclick="pushService(this.id);">
+                    <img src="assets/img/services1.png" alt="">
+                    <p class="services-name">
+                        MARKETING
+                    </p>
+                </div>
+                <div class="services-item-list left-bottom-right col-md-4 col-sm-12 " data-wow-delay="0.35s" id="seo-sem-list" onclick="pushService(this.id);">
+                    <img src="assets/img/services2.png" alt="">
+                    <p class="services-name">
+                        SEO & SEM
+                    </p>
+                </div>
+                <div class="services-item-list left-bottom col-md-4 col-sm-12 " data-wow-delay="0.5s" id="video-list" onclick="pushService(this.id);">
+                    <img src="assets/img/services3.png" alt="">
+                    <p class="services-name">
+                        VIDEO
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="services-item-list top-right col-md-4 col-sm-12 " data-wow-delay="0.6s" id="graphic-design-list" onclick="pushService(this.id);">
+                    <img src="assets/img/services4.png" alt="">
+                    <p class="services-name">
+                        DISEÑO GRÁFICO
+                    </p>
+                </div>
+                <div class="services-item-list left-top-right col-md-4 col-sm-12 " data-wow-delay="0.8s" id="web-list" onclick="pushService(this.id);">
+                    <img src="assets/img/services5.png" alt="">
+                    <p class="services-name">
+                        DISEÑO/DESARROLLO WEB
+                    </p>
+                </div>
+                <div class="services-item-list left-top col-md-4 col-sm-12 wow " data-wow-delay="1s"  id="branding-list" onclick="pushService(this.id);">
+                    <img src="assets/img/services6.png" alt="">
+                    <p class="services-name">
+                        BRANDING
+                    </p>
+                </div>
+            </div>
+            <div class="spacer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/jquery.fullpage.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
