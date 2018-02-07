@@ -39,6 +39,17 @@ $(document).ready(function() {
         services = data
     });
 
+    $('#sendMessage').on('click', function(){
+        var name = document.getElementById('name').value
+        var mail = document.getElementById('mail').value
+        var comments = document.getElementById('comments').value
+        var services = selectedServices.join(", ");
+        var url = " http://chicleypegacreativo.com/chicleypegacreativo/phpChicle/sendMail.php?name=" + name + "&email=" + mail +"&comment="+ comments +"&services="+services;
+        $.get(url, function(){
+            console.log('http')
+        });
+    });
+
     Map();
 });
 function Map() {
