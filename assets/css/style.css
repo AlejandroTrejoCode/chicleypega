@@ -42,10 +42,6 @@ address {
     background-color: #ff204c;
 }
 
-.logo {
-    height: 70px;
-}
-
 .nav-item {
     font-weight: 700;
 }
@@ -63,13 +59,12 @@ address {
 }
 
 #fullpage {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner-blend-mode.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-color: #ff204c;
-    background-blend-mode: multiply;
 }
 
 .legend h1 {
@@ -137,7 +132,7 @@ address {
 
 .photo{
     width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .overlay-pink{
@@ -367,14 +362,12 @@ label {
 }
 
 #map{
-    min-height: 500px;
-    height: 600px;
-    max-height: 700px;
+    height: 700px;
 }
 
 #select-services {
     background-color: rgb(255,255,255);
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255,255,255, 1);
     color: #000;
 }
 
@@ -428,6 +421,18 @@ footer i:hover {
 
 @media (max-width: 576px) { 
     
+    p {
+        font-size: 0.9em;
+    }
+    
+    .logo {
+        height: 50px;
+    }
+    
+    address {
+        font-size: 0.9em;
+    }
+    
     .legend h1{
         font-size: 2em;
     }
@@ -453,7 +458,6 @@ footer i:hover {
     
     .about-us .right p {
         text-align: justify;
-        font-size: 0.9em;
     }
     
     .team-photo {
@@ -465,24 +469,45 @@ footer i:hover {
     }
     
     .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
+        font-size: 60px;
+        top: 10px;
         right: 35px;
     }
     
-    .portfolio .container .row {
-        width: 100%;
+    #closebtn-services {
+        color: black;
     }
     
-    .portfolio-images1, .portfolio-images2 {
-        width: 100%;
+    .portfolio .container {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
-    
+
     .portfolio-image {
         width: 100%;
-        text-align: center;
         display: flex;
-        margin: 5%;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
+
+    .portfolio-image img {
+        max-width: 90%;
+        height: auto;
+    }
+    
+    .icon img, .phone img {
+        width: 50px;
+    }
+    
+    .contacto a {
+        font-size: 0.8em;
+    }
+    
+    #map {
+        margin-top: 20px;
+        height: 400px;
+    }
+    
 }

@@ -10,7 +10,7 @@ $(document).ready(function() {
     new WOW().init();
     
     $(window).scroll(function() {
-        if ($(window).scrollTop() >= 500) {
+        if ($(window).scrollTop() >= 100) {
             $("#header").addClass('coloredNav');
         } else {
             $("#header").removeClass('coloredNav');
