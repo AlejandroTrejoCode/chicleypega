@@ -435,10 +435,12 @@ footer i:hover {
     
     .legend h1{
         font-size: 2em;
+        text-shadow: none;
     }
     
     .legend h5 {
         font-size: 0.9em;
+        text-shadow: none;
     }
     
     .logotipo {
