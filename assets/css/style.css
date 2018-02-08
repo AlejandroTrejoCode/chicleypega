@@ -30,6 +30,11 @@ address {
     background-color: #ffda00;
 }
 
+.navbar-light .navbar-toggler {
+    color: white;
+    border: none;
+}
+
 #header {
     position: fixed;
     display: block;
@@ -416,6 +421,10 @@ footer i:hover {
     .services-item, .services-item-list {
         border: 1px solid #dddddd;
     }
+    
+    #map {
+        margin-top: 20px;
+    }
 }
 
 
@@ -507,8 +516,7 @@ footer i:hover {
         font-size: 0.8em;
     }
     
-    #map {
-        margin-top: 20px;
+    #map {        
         height: 400px;
     }
     
