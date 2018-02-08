@@ -53,12 +53,18 @@ $(document).ready(function() {
     Map();
 });
 function Map() {
+    LatLng = new google.maps.LatLng(21.1590935, -86.8249968);
     var mapCanvas = document.getElementById("map");
     var mapOptions = {
-        center: new google.maps.LatLng(51.5, -0.2),
-        zoom: 10
+        center: LatLng,
+        zoom: 18
     };
+    var marker = new google.maps.Marker({
+        position: LatLng,
+        title:"Chicle y Pega"
+    });
     var map = new google.maps.Map(mapCanvas, mapOptions);
+    marker.setMap(map);
 }
 function overlayEfectIn(id){
     console.log(id)
