@@ -1,38 +1,38 @@
 {
     "marketing": 
         {
-            "image" : "services1.png",
+            "image" : "BannerMarketing.png",
             "title" : "MARKETING",
             "description": "Le damos a tu marca de qué hablar, creando contenido interesante y de valor para tu mercado potencial. Generando engagement, branding y reconocimiento de marca."
         }
     ,
     "seo-sem" : 
         {
-            "image" : "services2.png",
+            "image" : "BannerSEO.png",
             "title" : "SEO & SEM",
             "description" : "Incrementa el número de usuarios en tu sitio web apostando por uno de los modelos de publicidad líderes en el mundo online: PPC (Pay Per Click) donde pagas sólo por el tráfico recibido."
         },
     "video" : 
         {
-            "image" : "services3.png",
+            "image" : "BannerVideo.png",
             "title" : "VIDEO",
             "description" : "De todos los formatos publicitarios, el video es el rey. Realizamos videos de alta calidad y animación digital que llevarán la comunicación de tu marca a una experiencia audiovisual que tu mercado no podrá olvidar."
         },
     "graphic-design" : 
         {
-            "image" : "services4.png",
+            "image" : "BannerDiseno.png",
             "title" : "DISEÑO GRAFICO",
             "description" : "Nuestra misión es captar la atención de tus consumidores a través del diseño gráfico, brindando una experiencia visual única adaptada al estilo de tu marca, no importa el formato."
         },
     "web" : 
         {
-            "image" : "services5.png",
+            "image" : "BannerWeb.png",
             "title" : "DISEÑO/DESARROLLO WEB",
             "description" : "Los sitios web son el primer acercamiento del consumidor con las marcas, nuestros sitios web están elaboradas no sólo para satisfacer a los usuarios sino a los motores de búsqueda lo que mejora y facilita su posicionamiento."
         },
     "branding" : 
         {
-            "image" : "services6.png",
+            "image" : "BannerBranding.png",
             "title" : "BRANDING",
             "description" : "Le ponemos nombre y apellido a tu marca, transmitiendo sus valores y esencia a través de una identidad corporativa llamativa para convertirla en una Love Mark."
         }

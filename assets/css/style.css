@@ -278,6 +278,11 @@ address {
     margin: 20px 0;
 }
 
+#service-img {
+    max-width: 100%;
+    height: auto;
+}
+
 .portfolio-images1, .portfolio-images2 {
     width: 100%;
     height: auto;
