@@ -103,7 +103,8 @@ function pushService(id){
     }
     else{
         $('#' + id).css('background','transparent');
-        selectedServices = selectedServices.filter(item => item !== auxId);
+        var index = selectedServices.indexOf(auxId);
+        if (index !== -1) selectedServices.splice(index, 1);
     }
     $("#services-selected").text(selectedServices.join(" + "));
 }
