@@ -89,7 +89,8 @@ address {
 
 
 .about-us {
-    background-image: url(../img/background-about.png);
+    background-image: url(../img/background-about-gradient.jpg);
+    background-repeat: repeat-x;
     min-height: 700px;
     display: flex;
     align-items: center;
@@ -407,6 +408,10 @@ footer {
 footer p {
     margin: 0;
     padding: 20px 0 10px 0;
+}
+
+footer a {
+    color: #a8a8a8;
 }
 
 footer i {

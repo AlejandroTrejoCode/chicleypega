@@ -17,9 +17,19 @@ $(document).ready(function() {
         }
     });
     
-    $('.services-item').on('mouseover', function(){
-        console.log(this.id);
-    });
+    $(".nav-item a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
     
     $('.services-item').on('click', function(){
         $('#services-overlay').css('width','100%');
@@ -93,7 +103,7 @@ function pushService(id){
     }
     else{
         $('#' + id).css('background','transparent');
-        selectedServices = selectedServices.filter(item => item !== auxId)
+        selectedServices = selectedServices.filter(item => item !== auxId);
     }
     $("#services-selected").text(selectedServices.join(" + "));
 }
