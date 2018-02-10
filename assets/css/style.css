@@ -30,6 +30,16 @@ address {
     background-color: #ffda00;
 }
 
+.btn-filter {
+    padding: 3px 25px;
+    background-color: #a0a1b5;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
 .navbar-light .navbar-toggler {
     color: white;
     border: none;
@@ -424,7 +434,78 @@ footer i:hover {
     color: yellow;
 }
 
-/*--------------*/
+
+
+/* ----- PORTAFOLIO:  -----;*/
+
+
+.banner-portafolio {
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../img/BannerPortfolios.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.banner-portafolio #header {
+    background-color: #ff204c;
+}
+
+.portafolio-legend h2 {
+    font-size: 5em;
+    font-weight: 700;
+    text-align: right;
+}
+
+.container-legend {
+    display: flex;
+    flex-direction: row;
+}
+
+#b1 {
+    color: #3c3950;
+}
+
+#b2 {
+    color: #636881;
+}
+
+#b3 {
+    color: #a0a1b5;
+}
+
+.portafolio-sublegend p {
+    color: #5f727f;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.portafolio-sublegend {
+    display: flex;
+    align-items: center;
+}
+
+.portafolio-filter {
+    margin-bottom: 20px;
+}
+
+.portafolio-intro p {
+    width: 60%;
+    margin: 30px 0;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.portafolio-filter .buttons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
 
 @media (max-width: 768px) { 
 
