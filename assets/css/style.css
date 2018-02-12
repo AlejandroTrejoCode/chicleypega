@@ -455,15 +455,15 @@ footer i:hover {
     background-color: #ff204c;
 }
 
+.container-legend {
+    display: flex;
+    flex-direction: row;
+}
+
 .portafolio-legend h2 {
     font-size: 5em;
     font-weight: 700;
     text-align: right;
-}
-
-.container-legend {
-    display: flex;
-    flex-direction: row;
 }
 
 #b1 {
@@ -499,12 +499,69 @@ footer i:hover {
     margin: 30px 0;
     text-align: justify;
     font-weight: 500;
+    color: #636881;
 }
 
 .portafolio-filter .buttons {
     width: 60%;
     display: flex;
     justify-content: space-between;
+}
+
+.single-vertical, .single-horizontal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+
+.single-vertical img, .single-horizontal img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clients .title h2 span {
+    font-weight: 700;
+}
+
+.clients .title {
+    margin: 30px 0 15px 0;
+}
+
+.clients img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1200px) {
+    
+    .portafolio-filter .buttons {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    
+    
+    
+    .portafolio-legend h2 {
+        font-size: 3.5em;
+    }
+    
+    .portafolio-sublegend p {
+        font-size: 1.2em;
+    }
+    
+    .portafolio-intro p {
+        width: 80%;
+    }
+    
+    .portafolio-filter .buttons {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) { 
@@ -516,8 +573,52 @@ footer i:hover {
     #map {
         margin-top: 20px;
     }
+    
+    .banner-portafolio {
+        min-height: 500px;
+    }
+    
+    .container-legend {
+        flex-direction: column;
+    }
+    
+    .portafolio-legend h2 {
+        text-align: left;
+        font-size: 3em;
+    }
+    
+    .portafolio-sublegend p {
+        font-size: 1.1em;
+    }
+    
+    .portafolio-intro p {
+        width: 90%;
+    }
+    
+    .portafolio-filter .buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .portafolio-filter .buttons button {
+        margin: 5px 0;
+    }
+    
+    .single-vertical, .single-horizontal {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .clients .clients-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
 }
-
 
 @media (max-width: 576px) { 
     
@@ -609,6 +710,37 @@ footer i:hover {
     
     #map {        
         height: 400px;
+    }
+    
+    .container-legend {
+        flex-direction: column;
+    }
+    
+    .portafolio-legend h2 {
+        font-size: 2em;
+        text-align: justify;
+    }
+    
+    .portafolio-sublegend p {
+        font-size: 1em;
+    }
+    
+    .portafolio-intro p {
+        width: 100%;
+    }
+    
+    .portafolio-filter .buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .portafolio-filter .buttons button {
+        margin: 2.5px 0;
+    }
+    
+    .single-vertical, .single-horizontal {
+        flex-direction: column;
     }
     
 }
