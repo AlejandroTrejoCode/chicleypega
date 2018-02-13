@@ -38,6 +38,12 @@ address {
     color: #fff;
     font-weight: 300;
     font-size: 0.9em;
+    transition: 0.5s background-color;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #00bcd4;
 }
 
 .navbar-light .navbar-toggler {
@@ -382,6 +388,16 @@ label {
    margin-left: 15px;
 }
 
+.form-success {
+    
+}
+
+.form-success p {
+    color: green;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
 #map{
     height: 700px;
 }
@@ -516,6 +532,10 @@ footer i:hover {
     margin: 10px 0px;
 }
 
+.single-image {
+    cursor: pointer;
+}
+
 .single-vertical img, .single-horizontal img {
     max-width: 100%;
     height: auto;
@@ -610,6 +630,16 @@ footer i:hover {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+    
+    .single-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .single-vertical img, .single-horizontal img {
+        max-width: 90%;
     }
     
     .clients .clients-img {
