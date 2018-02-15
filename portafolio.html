@@ -87,11 +87,11 @@
         <div class="portafolio-filter">
             <div class="container">
                 <div class="buttons">
-                    <button class="btn-filter">DISEÑO</button>
-                    <button class="btn-filter">BRANDING</button>
-                    <button class="btn-filter">VIDEO</button>
-                    <button class="btn-filter">FOTOGRAFÍA</button>
-                    <button class="btn-filter">WEB</button>
+                    <button id="diseño" onclick="loadImages(this.id)" class="btn-filter">DISEÑO</button>
+                    <button id="branding" onclick="loadImages(this.id)" class="btn-filter">BRANDING</button>
+                    <button id="video" onclick="loadImages(this.id)" class="btn-filter">VIDEO</button>
+                    <button id="foto" onclick="loadImages(this.id)" class="btn-filter">FOTOGRAFÍA</button>
+                    <button id="web" onclick="loadImages(this.id)" class="btn-filter">WEB</button>
                 </div>
             </div>
         </div>
@@ -101,13 +101,13 @@
                 <div class="row">
                     <div class="single-vertical">
                         <div class="col-md-4 col-sm-12 single-image">
-                            <img class="img-fluid" src="assets/img/single-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio1" class="img-fluid" src="assets/img/single-1.jpg" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12 single-image">
-                            <img class="img-fluid" src="assets/img/single-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio2" class="img-fluid" src="assets/img/single-1.jpg" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12 single-image">
-                            <img class="img-fluid" src="assets/img/single-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio3" class="img-fluid" src="assets/img/single-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -115,10 +115,10 @@
                 <div class="row">
                     <div class="single-horizontal">
                         <div class="col-md-6 col-sm-12 single-image">
-                            <img src="assets/img/single-h-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio4" src="assets/img/single-h-1.jpg" alt="">
                         </div>
                         <div class="col-md-6 col-sm-12 single-image">
-                            <img src="assets/img/single-h-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio5" src="assets/img/single-h-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -126,13 +126,13 @@
                 <div class="row">
                     <div class="single-vertical">
                         <div class="col-md-4 col-sm-12 single-image">
-                            <img class="img-fluid" src="assets/img/single-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio6" class="img-fluid" src="assets/img/single-1.jpg" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12 single-image">
-                            <img class="img-fluid" src="assets/img/single-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio7" class="img-fluid" src="assets/img/single-1.jpg" alt="">
                         </div>
                         <div class="col-md-4 col-sm-12 single-image">
-                            <img class="img-fluid" src="assets/img/single-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio8" class="img-fluid" src="assets/img/single-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -140,17 +140,32 @@
                 <div class="row">
                     <div class="single-horizontal">
                         <div class="col-md-6 col-sm-12 single-image">
-                            <img src="assets/img/single-h-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio9" src="assets/img/single-h-1.jpg" alt="">
                         </div>
                         <div class="col-md-6 col-sm-12 single-image">
-                            <img src="assets/img/single-h-1.jpg" alt="">
+                            <img onclick="selectImage(this.id)" id = "portafolio10" src="assets/img/single-h-1.jpg" alt="">
                         </div>
                     </div>
                 </div>
                 
             </div>
         </div>
-        
+
+        <div id="portafolio-overlay" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" id="closePortafolio">&times;</a>
+            <div class="overlay-content">
+                <div class="services-modal">       
+                    <div class="container">
+                        <div class="row">
+                            <div class="image-service">
+                                <img id="portafolio-img" alt="Servicio" title="Servicio">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="clients">
             <div class="container">
                 <div class="row">
@@ -200,7 +215,7 @@
         <script src="assets/js/jquery-3.2.1.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/main.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
     
 </html>

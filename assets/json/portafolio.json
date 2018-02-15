@@ -1,0 +1,42 @@
+{
+    "diseño" : 
+        {
+            "row1": ["single-1.jpg", "single-1.jpg", "single-3.jpg"],
+            "row2": ["single-1.jpg", "single-3.jpg"],
+            "row3": ["single-1.jpg", "single-1.jpg", "single-3.jpg"],
+            "row4": ["single-2.jpg", "single-1.jpg"]
+
+        }
+    ,
+    "branding" : 
+        {
+            "row1": ["single-2.jpg", "single-1.jpg", "single-3.jpg"],
+            "row2": ["single-1.jpg", "single-3.jpg"],
+            "row3": ["single-1.jpg", "single-2.jpg", "single-3.jpg"],
+            "row4": ["single-2.jpg", "single-2.jpg"]
+
+        },
+    "video" : 
+        {
+            "row1": ["single-3.jpg", "single-1.jpg", "single-3.jpg"],
+            "row2": ["single-1.jpg", "single-3.jpg"],
+            "row3": ["single-1.jpg", "single-1.jpg", "single-3.jpg"],
+            "row4": ["single-3.jpg", "single-3.jpg"]
+
+        },
+    "foto" : 
+        {
+            "row1": ["single-1.jpg", "single-2.jpg", "single-3.jpg"],
+            "row2": ["single-3.jpg", "single-3.jpg"],
+            "row3": ["single-1.jpg", "single-1.jpg", "single-3.jpg"],
+            "row4": ["single-1.jpg", "single-3.jpg"]
+        },
+    "web" : 
+        {
+            "row1": ["single-2.jpg", "single-2.jpg", "single-3.jpg"],
+            "row2": ["single-1.jpg", "single-3.jpg"],
+            "row3": ["single-1.jpg", "single-1.jpg", "single-3.jpg"],
+            "row4": ["single-3.jpg", "single-2.jpg"]
+
+        }
+}

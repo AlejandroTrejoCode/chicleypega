@@ -1,12 +1,13 @@
 // fullpage.js 
 var services;
 var selectedServices = [];
+var portafolio;
 $(document).ready(function() {
-	$('#fullpage').fullpage({
+	/*$('#fullpage').fullpage({
 		autoScrolling: false,
 		fitToSection: false
 	});
-    
+    */
     new WOW().init();
     
     $(window).scroll(function() {
@@ -45,10 +46,16 @@ $(document).ready(function() {
     $('#closebtn-services').on('click', function(){
         $('#select-services').css('width','0%');
     });
-     $.getJSON('./assets/json/services.json', function(data){
+    $('#closePortafolio').on('click', function(){
+        $('#portafolio-overlay').css('width','0%');
+    });
+    $.getJSON('./assets/json/services.json', function(data){
         services = data
     });
-
+    $.getJSON('./assets/json/portafolio.json', function(data){
+        portafolio = data;
+        loadImages('diseño');
+    });
     $('#sendMessage').on('click', function(){
         var name = document.getElementById('name').value
         var mail = document.getElementById('mail').value
@@ -60,8 +67,29 @@ $(document).ready(function() {
         });
     });
 
-    Map();
+    //Map();
+    
 });
+
+function loadImages(category){
+    console.log(portafolio[category].row1);
+    document.getElementById("portafolio1").src = "assets/img/" + portafolio[category].row1[0];
+    document.getElementById("portafolio2").src = "assets/img/" + portafolio[category].row1[1];
+    document.getElementById("portafolio3").src = "assets/img/" + portafolio[category].row1[2];
+    document.getElementById("portafolio4").src = "assets/img/" + portafolio[category].row2[0];
+    document.getElementById("portafolio5").src = "assets/img/" + portafolio[category].row2[1];
+    document.getElementById("portafolio6").src = "assets/img/" + portafolio[category].row3[0];
+    document.getElementById("portafolio7").src = "assets/img/" + portafolio[category].row3[1];
+    document.getElementById("portafolio8").src = "assets/img/" + portafolio[category].row3[2];
+    document.getElementById("portafolio9").src = "assets/img/" + portafolio[category].row4[0];
+    document.getElementById("portafolio10").src = "assets/img/" + portafolio[category].row4[1];
+}
+function selectImage(id){
+    var img = document.getElementById(id).src;
+    console.log();
+    document.getElementById("portafolio-img").src = img;
+    $('#portafolio-overlay').css('width','100%');
+}
 function Map() {
     LatLng = new google.maps.LatLng(21.1590935, -86.8249968);
     var mapCanvas = document.getElementById("map");
@@ -85,7 +113,6 @@ function overlayEfectIn(id){
 }
 
 function getService(id){
-    console.log(id);
     var title = services[id].title
     var description = services[id].description
     var image = services[id].image
