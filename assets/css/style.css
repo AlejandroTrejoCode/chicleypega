@@ -563,6 +563,10 @@ footer i:hover {
     margin: 15px 0;
 }
 
+.error-label{
+    color: red;
+    display: none;
+}
 
 @media (max-width: 1200px) {
     

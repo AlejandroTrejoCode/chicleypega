@@ -68,15 +68,51 @@ $(document).ready(function() {
     $.getJSON('./assets/json/services.json', function(data){
         services = data
     });
+   
     $('#sendMessage').on('click', function(){
-        var name = document.getElementById('name').value
-        var mail = document.getElementById('mail').value
+        var send = true;
+
+
+
+        var name = document.getElementById('name').value;
+        if(name == ''){
+            send = false;
+            $('#error-label-name').css('display', 'inherit');
+            
+        }
+        else {
+            $('#error-label-name').css('display', 'none');
+            
+        }
+        var mail = document.getElementById('mail').value;
+        if(mail == ''){
+            send = false;
+            $('#error-label-mail-1').css('display', 'inherit');
+
+        }
+        else {
+            $('#error-label-mail-1').css('display', 'none');
+            if(mail.indexOf('@') < 0){
+                send = false;
+                $('#error-label-mail-2').css('display', 'inherit');
+            }
+            else {
+                $('#error-label-mail-2').css('display', 'none');
+                
+            }
+            
+        }
+        
         var comments = document.getElementById('comments').value
         var services = selectedServices.join(", ");
         var url = " http://chicleypegacreativo.com/chicleypegacreativo/phpChicle/sendMail.php?name=" + name + "&email=" + mail +"&comment="+ comments +"&services="+services;
-        $.get(url, function(){
-        });
-        $('.form-success').css('display', 'inherit');
+        if(send){
+            $.get(url, function(){
+            });
+            $('.form-success').css('display', 'inherit');
+        }
+
+        
     });
 
     Map();

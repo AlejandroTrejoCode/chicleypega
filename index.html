@@ -361,10 +361,13 @@
                         </div>
                     </div>
 
-                    <form>
+                    <form id="messageForm">
 
-                        <input type="text" name="" placeholder="NOMBRE" id="name">
-                        <input type="email" name="" placeholder="CORREO" id="mail">
+                        <input type="text" name="name" placeholder="NOMBRE" id="name" required="">
+                        <label class="error-label" id="error-label-name">Ingresa tu nombre</label>
+                        <input type="email" name="mail" placeholder="CORREO" id="mail" required="">
+                        <label class="error-label" id="error-label-mail-1">Ingresa tu correo</label>
+                        <label class="error-label" id="error-label-mail-2">Ingresa un correo valido</label>
                         <textarea name="" placeholder="PLATÍCANOS TU PROYECTO" id="comments"></textarea>
 
                         <label id="services-selected">
