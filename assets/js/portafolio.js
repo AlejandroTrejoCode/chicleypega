@@ -1,12 +1,8 @@
+// fullpage.js 
 var services;
-var hash;
 var selectedServices = [];
+var portafolio;
 $(document).ready(function() {
-	$('#fullpage').fullpage({
-		autoScrolling: false,
-		fitToSection: false
-        
-    });
     new WOW().init();
     
     $(window).scroll(function() {
@@ -15,37 +11,6 @@ $(document).ready(function() {
         } else {
             $("#header").removeClass('coloredNav');
         }
-    });
-    
-    $(".anchor-services").on('click', function(event) {
-
-        if (this.hash !== "") {
-            event.preventDefault();
-            hash = "#services";
-
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 800, function(){
-            window.location.hash = hash;
-          });
-        }
-    });
-    
-    $(".nav-item a").on('click', function(event) {
-
-        if (this.hash !== "") {
-            event.preventDefault();
-            hash = this.hash;
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 800, function(){
-            window.location.hash = hash;
-          });
-        }
-    });
-    
-    $(".viewall").on('click', function(){
-        $(location).attr('href','portafolio.html');
     });
     
     $('.services-item').on('click', function(){
@@ -71,22 +36,22 @@ $(document).ready(function() {
     $.getJSON('./assets/json/portafolio.json', function(data){
         portafolio = data;
         loadImages('diseño');
-    });
-    $('#sendMessage').on('click', function(){
-        var name = document.getElementById('name').value
-        var mail = document.getElementById('mail').value
-        var comments = document.getElementById('comments').value
-        var services = selectedServices.join(", ");
-        var url = " http://chicleypegacreativo.com/chicleypegacreativo/phpChicle/sendMail.php?name=" + name + "&email=" + mail +"&comment="+ comments +"&services="+services;
-        $.get(url, function(){
-            console.log('http')
-        });
-    });
-
-    Map();
-    
+    });  
 });
 
+function loadImages(category){
+    console.log(portafolio[category].row1);
+    document.getElementById("portafolio1").src = "assets/img/" + portafolio[category].row1[0];
+    document.getElementById("portafolio2").src = "assets/img/" + portafolio[category].row1[1];
+    document.getElementById("portafolio3").src = "assets/img/" + portafolio[category].row1[2];
+    document.getElementById("portafolio4").src = "assets/img/" + portafolio[category].row2[0];
+    document.getElementById("portafolio5").src = "assets/img/" + portafolio[category].row2[1];
+    document.getElementById("portafolio6").src = "assets/img/" + portafolio[category].row3[0];
+    document.getElementById("portafolio7").src = "assets/img/" + portafolio[category].row3[1];
+    document.getElementById("portafolio8").src = "assets/img/" + portafolio[category].row3[2];
+    document.getElementById("portafolio9").src = "assets/img/" + portafolio[category].row4[0];
+    document.getElementById("portafolio10").src = "assets/img/" + portafolio[category].row4[1];
+}
 function selectImage(id){
     var img = document.getElementById(id).src;
     console.log();
