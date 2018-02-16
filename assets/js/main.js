@@ -68,10 +68,6 @@ $(document).ready(function() {
     $.getJSON('./assets/json/services.json', function(data){
         services = data
     });
-    $.getJSON('./assets/json/portafolio.json', function(data){
-        portafolio = data;
-        loadImages('diseño');
-    });
     $('#sendMessage').on('click', function(){
         var name = document.getElementById('name').value
         var mail = document.getElementById('mail').value
@@ -79,20 +75,15 @@ $(document).ready(function() {
         var services = selectedServices.join(", ");
         var url = " http://chicleypegacreativo.com/chicleypegacreativo/phpChicle/sendMail.php?name=" + name + "&email=" + mail +"&comment="+ comments +"&services="+services;
         $.get(url, function(){
-            console.log('http')
         });
+        $('.form-success').css('display', 'inherit');
     });
 
     Map();
     
 });
 
-function selectImage(id){
-    var img = document.getElementById(id).src;
-    console.log();
-    document.getElementById("portafolio-img").src = img;
-    $('#portafolio-overlay').css('width','100%');
-}
+
 function Map() {
     LatLng = new google.maps.LatLng(21.1590935, -86.8249968);
     var mapCanvas = document.getElementById("map");

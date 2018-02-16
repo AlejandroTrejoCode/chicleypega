@@ -387,11 +387,14 @@ label {
 .form-buttons button:nth-child(2) {
    margin-left: 15px;
 }
-
+.form-success{
+    display: none;
+}
 .form-success p {
     color: green;
     font-weight: 500;
     padding: 10px 0;
+
 }
 
 #map{
