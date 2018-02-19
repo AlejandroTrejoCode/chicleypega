@@ -568,6 +568,11 @@ footer i:hover {
     display: none;
 }
 
+.image-service{
+    text-align: center;
+}
+
+
 @media (max-width: 1200px) {
     
     .portafolio-filter .buttons {
@@ -598,7 +603,6 @@ footer i:hover {
 }
 
 @media (max-width: 768px) { 
-
     .services-item, .services-item-list {
         border: 1px solid #dddddd;
     }
@@ -664,7 +668,10 @@ footer i:hover {
 }
 
 @media (max-width: 576px) { 
-    
+    .image-service img{
+        display: inline-block;
+        width: 80%;
+    }
     p {
         font-size: 0.9em;
     }
